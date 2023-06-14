@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+             margin: 0;
+             padding: 0;
+        }
+        
+        .main {
+            /* border: 1px solid red; */
+            height: 700px;
+            width: 100%;
+        }
+
+        .loginpage {
+            border: 1px solid red;
+            height: 400px;
+            width: 25%;
+            margin-left: 40%;
+            margin-top: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        .loginCenter {
+            /* border: 1px solid red; */
+            text-align: center;
+        }
+
+        p {
+            font-style: italic;
+            color: red;
+        }
+
+        .create_new {
+            /* border: 1px solid blue; */
+            height: 50px;
+            width: 100%;
+        }
+
+        .create_new p {
+            margin-top: 5px;
+            vertical-align: top;
+            margin-bottom: 0;
+            display: inline-block;
+            margin-left: 100px;
+            color: black;
+        }
+
+        .create_new a {
+            text-decoration: none;
+            color: rgb(8, 53, 188);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="loginpage">
+            <h1>Login </h1>
+            <form action="/login_validation" method="POST">
+                <div class="loginCenter">
+                    <label for="username">Username</label><br>
+                    <input type="email" name="l_email" required><br><br>
+
+                    <label for="Password">Password</label><br>
+                    <input type="password" name="l_password" required><br><br>
+
+                    <button>Login</button>
+                    <input type="reset">
+                </div>
+                <div class="create_new">
+                    <p>Don't have an account? <a href="/signup">Create</p></a>
+                </div>
+            </form>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
